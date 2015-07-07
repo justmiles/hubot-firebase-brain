@@ -19,13 +19,13 @@ Add `hubot-firebase-brain` to `external-scripts.json`.
 ```
 
 ## Configuration
-Set the enviornment variable `FIREBASE_URL` to your firebase/hubot scop. eg https://your_firebase.firebaseio.com/hubot
+Set the enviornment variable `FIREBASE_URL` to your firebase/hubot scope. eg https://your_firebase.firebaseio.com/hubot
 
 
 ## (Optional) Firebase Authentication
 Set the enviornment variable `FIREBASE_SECRET` generated here from Firebase (https://your_firebase.firebaseio.com/?page=Admin)
 
-Create a security rule to allow read/write in the `hubot` scope. (https://your_firebase.firebaseio.com/?page=Security). Note that your `FIREBASE_URL` must scope to `hubot` as shown above for authentication to work.
+Create a security rule to allow read/write. Simply add `auth.hubot === true` to the scope of your hubot firebase. (https://your_firebase.firebaseio.com/?page=Security). 
 
 ```
 {

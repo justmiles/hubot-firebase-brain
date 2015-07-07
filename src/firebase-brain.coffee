@@ -34,12 +34,12 @@ module.exports = (robot) ->
 
     firebaseBrain.once 'value', (data) ->
       robot.logger.info "hubot-firebase-brain: Successfully connected to Firebase"
-      robot.brain.mergeData data.exportVal()
+      robot.brain.mergeData data.val()
       robot.brain.setAutoSave true
 
     firebaseBrain.on "value", (data)->
       robot.logger.debug "Updating brain from firebase"
-      robot.brain.mergeData data.exportVal()
+      robot.brain.mergeData data.val()
 
     robot.brain.on 'save', (data = {}) ->
       robot.logger.debug 'Saving brain to firebase'
