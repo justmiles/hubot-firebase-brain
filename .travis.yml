@@ -1,6 +1,12 @@
 language: node_js
 node_js:
-  - "0.11"
-  - "0.10"
+- '0.12'
 notifications:
-  email: false
+  email: true
+deploy:
+  provider: npm
+  email: j.milesmaddox@gmail.com
+  api_key:
+    secure: SCg17mZIINoKQb3qZPbDm8LfHOxNi5rc9we8T/oCTEt6ncGHYQPu0dPHv+XdXPBDRWIxrWQlnhYh8uM7ZmVQol+cnolgVvCee3JZN9v5ROxHZioEVwjBXZ10AoR8NQNb1/26m+sNujxPqg22k2wD0Jod23zYf23/19rps2/WNr+SR3ecjXyslYP7PvCK37hVZMXljDsZTWyPphS3rWIYP5JhP3JrA8z0/EPCuc4hNrMwLpNDB5dUS3S8+2vE0mjIYKc7OWK3FoDVDsWb9KIDihc6eYtfrWOsZqiKfe4wq7h0UZQ+mcpWKbfMZVVXl3ZhXaXeH4Ad9LflHAGcRfIepRsTH3fjVH5RRGG0epYG9H4nEz2JmEWhCa3nq214R4nJGL8QFkP1bJYRo03ToyaIrb+8aEG4lRmQjEF6IT1m8eWxZuLqAeXUixffsy79fvBkFWv6LyYC+n4aelxpXM2va/KSKs0twdUpbd/9K6WtixiNBjalGn+joDv6HNnS5vYwPycElAThYy+zbNjteZxAEGnyD5JSGUxM+6SfZ6h/q+DnsnF3ZYq6UwKdtHEE6Q6uCKgzEJUlUTNZdRMXS0Xd0uVM/4zwz3NJNuoLtHhRuhNUufO3seIkPqzBbd2GuzjKZQyCw9tYkvdpyVNPv+im1N1sjMvWPLBN4g7rZBIkeo4=
+  on:
+    repo: justmiles/hubot-firebase-brain
