@@ -7,8 +7,3 @@ var brain = require('../src/firebase-brain');
 exports['brain instantiated'] = function(beforeExit, assert) {
     assert.isNotNull(brain);
 };
-
-exports['brain instantiated'] = function(beforeExit, assert) {
-    assert.isNotNull(brain);
-};
-
